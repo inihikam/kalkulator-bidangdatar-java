@@ -28,11 +28,12 @@
         android:fontFamily="sans-serif-condensed-medium"/>
 
     <EditText
-        android:id="@+id/pjg_bidang"
+        android:id="@+id/pjgBidang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:digits="0123456789"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -42,41 +43,45 @@
         android:fontFamily="sans-serif-condensed-medium"/>
 
     <EditText
-        android:id="@+id/lbr_bidang"
+        android:id="@+id/lbrBidang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:digits="0123456789"/>
 
     <Button
-        android:id="@+id/htg_persegi"
+        android:id="@+id/htgPersegi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Persegi"
+        android:onClick="hitungPersegi"
         android:backgroundTint="#999999"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black" />
 
     <Button
-        android:id="@+id/htg_segitiga"
+        android:id="@+id/htgSegitiga"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Segitiga"
+        android:onClick="hitungSegitiga"
         android:backgroundTint="#999999"
         android:textColor="@color/black"/>
 
     <Button
-        android:id="@+id/htg_lingkaran"
+        android:id="@+id/htgLingkaran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Lingkaran"
+        android:onClick="hitungLingkaran"
         android:backgroundTint="#999999"
         android:textColor="@color/black"/>
 
     <TextView
-        android:id="@+id/hasil_hitung"
+        android:id="@+id/txtHasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
